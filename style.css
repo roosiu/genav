@@ -63,6 +63,30 @@
   display: flex;
   flex-direction: column;
 }
+.content .right-side .warning {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, -50%);
+  background-color: #2580ca;
+  padding: 15px;
+  border: solid 2px #ffadad;
+  color: #ffadad;
+  font-weight: 200;
+  animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translate(50%, -50%);
+  }
+  25%, 75% {
+    transform: translate(50%, -50%) rotate(1deg);
+  }
+  50% {
+    transform: translate(50%, -50%) rotate(-1deg);
+  }
+}
 .content .right-side .input-div {
   position: relative;
 }
