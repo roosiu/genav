@@ -144,14 +144,11 @@ buttonGenerate.addEventListener("click", function () {
 });
 
 const text = document.querySelectorAll("[data-genav_text]");
-/**
- * Executes the provided function when the window is fully loaded.
- * @param {function} generateAvatar - The function to execute when the window is fully loaded.
- */
+
 window.onload = function () {
   if (text.length) {
     text.forEach(function (el) {
-      generateAvatar(el.dataset.genav_text, el.dataset.genav_size, el);
+      generateAvatar(el.dataset.genav_text, parseInt(el.dataset.genav_size), el);
     });
   }
 };
