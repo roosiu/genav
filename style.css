@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   min-height: 100vh;
   background: rgb(157, 221, 244);
+  background: -moz-radial-gradient(circle, rgb(157, 221, 244) 7%, rgb(77, 188, 202) 50%, rgb(25, 82, 145) 100%);
+  background: -webkit-radial-gradient(circle, rgb(157, 221, 244) 7%, rgb(77, 188, 202) 50%, rgb(25, 82, 145) 100%);
   background: radial-gradient(circle, rgb(157, 221, 244) 7%, rgb(77, 188, 202) 50%, rgb(25, 82, 145) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9dddf4",endColorstr="#195291",GradientType=1);
 }
@@ -53,7 +55,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
   background-color: #f7f7f7;
   box-sizing: border-box;
-  height: -moz-min-content;
   height: min-content;
 }
 .content .right-side {
@@ -150,4 +151,6 @@ select {
   padding: 0 10px;
   font-size: 15px;
   color: #f7f7f7;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
